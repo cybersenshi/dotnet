@@ -1,0 +1,162 @@
+@import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=Fredericka+the+Great|Indie+Flower');
+
+body
+	{
+	background:rgba(52,57,221,.80);
+	background-image:url('../img/transparent-square-tiles.png'), url('../img/wingy.png'); /* Wing graphic from the brush set found at http://wilw.deviantart.com/art/Wings-Brushes-72016189 With gratitude and admiration. */
+	background-repeat:repeat, no-repeat;
+	background-attachment:scroll, fixed;
+	background-position:left top, right bottom;
+	font-color:#333;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+	}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+header h1
+	{
+	font-family:"Fredericka the Great", sans-serif;
+	font-size:7vw;
+	color:black;
+	text-shadow:-5px 5px 5px rgba(0,0,0, 0.3);
+	letter-spacing:0;
+	}
+
+nav
+	{
+	font-family:"Indie Flower", sans-serif;
+	text-transform:lowercase;
+	}
+
+nav a
+	{
+	text-decoration:none;
+	color:black;
+	}
+
+nav a:hover
+	{
+	color:black;
+	text-shadow: 4px 10px rgba(0, 0, 0, 0.51),-20px 23px rgba(0, 0, 0, 0.41),-3px -18px rgba(0, 0, 0, 0.31),50px 2px rgba(0, 0, 0, 0.25);
+	transition-property: text-shadow;
+	transition: opacity 5ms ease-out;
+	}
+
+.heroic
+	{
+	position:fixed;
+	top:35vh;
+	left:30vw;
+	font-size:3vw;
+	}
+
+.tumbl
+	{
+	position:fixed;
+	top:40vh;
+	left:40vw;
+	font-size:2vw;
+	}
+
+.tweet
+	{
+	position:fixed;
+	bottom:30vh;
+	left:35vw;
+	font-size:3.5vw;
+	}
+
+.fb
+	{
+	position:fixed;
+	bottom:35vh;
+	left:50vw;
+	font-size:2vw;
+	}
+
+.about
+	{
+	position:fixed;
+	bottom:30vh;
+	right:35vw;
+	font-size:3vw;
+	}
+
+.cv
+	{
+	position:fixed;
+	top:35vh;
+	left:52vw;
+	font-size:3.8vw;
+	}
+
+.insta
+	{
+	position:fixed;
+	top:38vh;
+	right:32vw;
+	font-size:2.8vw;
+	}
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+header h1, .link1, .link2,	.link3, .link4, .link5
+	{
+	position:relative;
+	width:100%;
+	}
+
+header h1
+	{
+	top:10px;
+	font-size:300%;
+	text-align:center;
+	}
+
+.link1, .link5
+	{
+	text-align:left;
+	}
+
+.link2, .link4
+	{
+	text-align:right;
+	}
+
+.link3
+	{
+	text-align:center;
+	}
+
+
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
